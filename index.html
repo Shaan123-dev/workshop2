@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Shaan Shrestha</title>
+</head>
+<body>
+	<header id="hero">
+		<video autoplay loop muted id="video-background">
+			<source src="./video/backy.mp4" type="video/mp4">
+			Your browser doesnot support video tag
+		</video>
+		<nav class="navbar">
+			<span class="logo">My Portfolio</span>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+				☰
+				<!-- <span></span>
+				<span></span>
+				<span></span> -->
+			</button>
+		</nav>
+		<div class="hero-content">
+			<h1>Shaan Shrestha</h1>
+			<p>Movie enthusiast & Someone</p>
+		</div>
+	</header>
+	<section id="about">
+		<h2>About Me</h2>
+		<p>
+			Hello! I am Shaan Shrestha,a passionate movie enthusiast.I love watching movies and how it is made.
+		</p>
+	</section>
+	<section id="projects">
+		<h2>Projects</h2>
+		<ul id="projects-grid">
+        <li class="project-card">
+        	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaYuCWY6mlv1nrAW2HEjtzfsV2v3o-opSmgQ&s">
+        	<p>I made a driving simulator for project using unity.</p>
+        </li>
+        <li class="project-card">
+        	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxKA7HvO10GTQBbTTroY57QxgaI-W6kfyUw&s">
+        	<p>I made a weather app for college project</p>
+        </li>
+        <li class="project-card">
+        	<img src="https://i.guim.co.uk/img/media/c6f7b43fa821d06fe1ab4311e558686529931492/168_84_1060_636/master/1060.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=fd98bc73a66809dbb678b1a88aa6f96c">
+        	<p>I made an games for children like roblox and minecraft</p>
+        </li>
+      </ul>
+	</section>
+	<section id="contact">
+		<h2>Contact me</h2>
+    <form id="contact-form-id">
+      <label for="name" id="label-name">Name</label>
+      <input type="text" id="name">
+      <br><br>
+      <label for="email" id="label-email">Email</label>
+      <input type="email" id="email">
+      <br><br>
+      <label for="message" id="label-message">Message</label>
+      <textarea id="message" placeholder="Write a message..."></textarea>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="form-message"></div>
+	</section>
+	<footer>
+    <p style="font-weight: bolder;font-size: 30px;">Copyright &copy; 2025 Shaan Shrestha</p>
+    <div class="wawa">
+      <a href="mailto:np03cy4s250026@heraldcollege.edu.np">Gmail</a>
+      <p></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
