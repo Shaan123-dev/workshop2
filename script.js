@@ -25,7 +25,6 @@ form.addEventListener('submit', (event) => {
 
     let isValid = true;
 
-    // NAME CHECK
     if (nameInput.value.trim() === "") {
         labelName.classList.add("label-error");
         labelName.classList.remove("label-success");
@@ -35,7 +34,6 @@ form.addEventListener('submit', (event) => {
         labelName.classList.add("label-success");
     }
 
-    // EMAIL CHECK
     if (emailInput.value.trim() === "") {
         labelEmail.classList.add("label-error");
         labelEmail.classList.remove("label-success");
@@ -45,7 +43,6 @@ form.addEventListener('submit', (event) => {
         labelEmail.classList.add("label-success");
     }
 
-    // MESSAGE CHECK
     if (messageInput.value.trim() === "") {
         labelMessage.classList.add("label-error");
         labelMessage.classList.remove("label-success");
@@ -55,20 +52,17 @@ form.addEventListener('submit', (event) => {
         labelMessage.classList.add("label-success");
     }
 
-    // FINAL CHECK
     if (!isValid) {
         msgDiv.textContent = "Please fill out all required fields.";
         msgDiv.style.color = "red";
         return;
     }
 
-    // SUCCESS
     msgDiv.textContent = "Thank you for your message!";
     msgDiv.style.color = "lightgreen";
 
     form.reset();
 
-    // Reset labels to white after success
     labelName.classList.remove("label-success");
     labelEmail.classList.remove("label-success");
     labelMessage.classList.remove("label-success");
